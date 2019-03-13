@@ -81,7 +81,7 @@ getNumberWithPattern = function( a, pattern ){
     }
     for( var i = 0; i < len; i ++ ) {
       initialString += a[i];
-      initialString = currentNumber( initialString, pattern );
+      initialString = getNumberWithPattern( initialString, pattern );
     }
     res = initialString;  
   }
